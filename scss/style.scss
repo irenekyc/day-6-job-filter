@@ -1,0 +1,142 @@
+@import 'variables';
+@import 'utilities';
+
+body{
+    background: $primary-background;
+    color: $primary-cyan;
+    font-family: $main-font;
+    font-size:15px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a{
+    color: $main-darker;
+    text-decoration: none;
+
+    &:hover{
+        color: $primary-cyan;
+    }
+}
+
+//HEADER
+header{
+    background: $primary-cyan;
+    width:100%;
+    height: 150px;
+    position: relative;
+
+    .header-filter{
+        position:absolute;
+        font-size:0.8rem;
+        top:75%;
+        left:50%;
+        transform: translateX(-50%);
+        width:80%;
+        background: white;
+        border-radius: 5px;
+        @include BOXSHADOW
+    }
+
+}
+//FILTER
+.filter{
+    &-tablet{
+        font-size:0.8rem;
+        background: $main-light;
+        color:$primary-cyan;
+        padding:5px 0 5px 5px;
+        border-radius: 5px;
+        margin-right: 0.5rem;
+        margin-bottom:0.5rem;
+    }
+    &-delete{
+        background: $primary-cyan;
+        color:white;
+        cursor: pointer;
+        padding:5px;
+        border-radius: 0 5px 5px 0;
+        font-size:1rem;
+
+        &:hover{
+            background: $main-darker;
+        }
+    }
+
+    &-clear{
+        color:   $main-dark;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+//DISPLAY CARD
+.display-card{
+    position:relative;
+    background: white;
+    @include BOXSHADOW;
+    border-radius: 5px;
+    width:80%;
+    @include ALIGNCENTER;
+    padding: 2rem 1rem 1rem 1rem;
+
+
+ 
+    .card-top{
+        border-bottom: 1px solid $main-dark;
+        font-size:0.85rem;
+    }
+    &.display-featured{
+        border-left:5px solid $primary-cyan;
+    }
+    
+}
+
+.feature{
+    font-size:0.7rem;
+    margin-left:0.5rem;
+    padding: 4px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    &-new{
+        background: $primary-cyan;
+        color: white;
+    }
+    &-feature{
+        background: $main-darker;
+        color:white;
+    }
+    &-role{
+        cursor: pointer;
+        padding: 8px 12px;
+        background: $main-light;
+        color: $primary-cyan;
+        border: 2px;
+        text-transform: none;
+        font-weight: 700;
+        margin-bottom:0.5rem;
+
+        &:hover{
+            background: $primary-cyan;
+            color:white;
+        }
+
+    }
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import 'responsive';

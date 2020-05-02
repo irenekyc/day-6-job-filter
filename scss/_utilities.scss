@@ -1,0 +1,51 @@
+//LAYOUT
+.wrapper{
+    padding: 0 4%;
+}
+.flex{
+    display:flex;
+
+    &-wrap{
+        flex-wrap: wrap;
+    }
+    &.space-between{
+        justify-content: space-between;
+    }
+
+    &.align-center{
+        align-items: center;
+    }
+}
+@for $i from 1 through 10{
+    .py-#{$i} { padding: 1rem* $i 0;}
+}
+
+@for $i from 1 through 10{
+    .my-#{$i} { margin: 1rem* $i 0;}
+}
+@for $i from 1 through 10{
+    .ml-#{$i} { margin-left: 1rem* $i ;}
+}
+
+//ALIGN CENTER
+@mixin ALIGNCENTER {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//BOX SHADOW
+
+@mixin BOXSHADOW{
+    box-shadow: 0 4px 10px -2px $main-dark;
+}
+
+//TEXT
+.lead{
+    font-weight:700;
+}
+
+.second{
+    color: $main-dark;
+    font-size:0.7rem;
+}
+

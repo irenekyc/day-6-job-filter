@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/a1e74affc8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Frontend Mentor | Job Listings</title>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(min-width: 766px)" srcset="images/bg-header-desktop.svg">
+      <img src="images/bg-header-mobile.svg" alt="">
+    </picture>
+    
+      <div class="header-filter wrapper">
+        <div class="py-1 flex space-between align-center ">
+          <div class="filters flex flex-wrap">
+            <span class="filter-tablet" value="frontend">Frontend <span class="filter-delete" id="remove-filter"><i class="fas fa-times"></i></span></span>
+            <span class="filter-tablet" value="css">CSS <span class="filter-delete" id="remove-filter"><i class="fas fa-times"></i></span></span>
+            <span class="filter-tablet" value="javascript">JavaScript <span class="filter-delete" id="remove-filter"><i class="fas fa-times"></i></span></span>    
+          </div>
+          <div id="clear" class="filter-clear"> Clear </div>
+       </div>
+
+    </div>
+  </header>
+  <section class="display-container py-5">
+
+    <div class="display-card display-featured my-3">
+      <img id="company-photo" class="company-photo" src="images/photosnap.svg" alt="">
+      <div class="card-top">
+      <div class="my-1 flex" id="job-features">
+        <p id="company-name"> Photosnap</p>
+        <div id="features"> 
+          <span class="feature feature-new"> New! </span>
+          <span class="feature feature-feature"> Feature </span></div>
+      </div>
+
+      <div>
+        <a href="/" id="job-title" class="my-1 lead"> Senior Frontend Developer</a>
+        <p class="flex job-details py-1 second" id="details"> 
+              <span id="post-time" > 1d ago </span> 
+              <span class="ml-1">&#8226</span>
+              <span id="job-type" class="ml-1"> Full Time</span>
+              <span class="ml-1"> &#8226</spanclass="ml-1">
+              <span id="job-location" class="ml-1"> USA Only</span></p>
+      </div>
+    </div>
+      <div class="card-bottom flex flex-wrap py-1">
+        <span class="feature feature-role" value="frontend"> Frontend</span>
+        <span class="feature feature-role" value="senior"> Senior</span>
+        <span class="feature feature-role" value="html"> HTML</span>
+        <span class="feature feature-role" value="css"> CSS</span>
+        <span class="feature feature-role" value="javascript"> JavaScript</span>
+      </div>
+    </div>
+
+
+    <div class="display-card my-1">
+      <img id="company-photo" class="company-photo" src="images/myhome.svg" alt="">
+      <div class="card-top">
+
+      
+      <div class="my-1 flex" id="job-features">
+        <p id="company-name"> MyHome</p>
+        <div id="features"> </div>
+      
+      </div>
+
+      <div>
+        <a href="/" id="job-title" class="my-1 lead"> Junior Frontend Developer</a>
+        <p class="flex job-details py-1 second" id="details"> 
+              <span id="post-time" > 5d ago </span> 
+              <span class="ml-1">&#8226</span>
+              <span id="job-type" class="ml-1"> Contract </span>
+              <span class="ml-1"> &#8226</spanclass="ml-1">
+              <span id="job-location" class="ml-1"> USA Only</span></p>
+      </div>
+    </div>
+
+      <div class="card-bottom flex flex-wrap my-1">
+        <span class="feature feature-role"> Frontend</span>
+        <span class="feature feature-role"> Junior</span>
+        <span class="feature feature-role"> CSS</span>
+        <span class="feature feature-role"> JavaScript</span>
+      </div>
+  </div>
+   
+</div>
+  </section>
+ 
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Irene K</a>.
+  </div>
+</body>
+</html>
